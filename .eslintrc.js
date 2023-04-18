@@ -98,5 +98,7 @@ module.exports = {
     onBeforeUnmount: true,
     useViewport: true,
     googletag: true,
+    onBeforeRouteLeave: true,
+    onBeforeMount: true,
   },
 };
