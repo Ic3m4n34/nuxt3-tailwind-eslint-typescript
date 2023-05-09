@@ -43,11 +43,6 @@ const getOutlineForTopic = async (topic: string, tone: string): Promise<InitialR
       };
     });
 
-    console.log('=====================');
-    console.log('outline:', outline);
-    console.log('parsed:', parsed);
-    console.log('=====================');
-
     return {
       text: outline,
       sections: parsed,
@@ -88,9 +83,6 @@ const getTextForSection = async (topic: string, tone: string, completeOutline: s
     });
 
     const sectiontext = completion.data.choices[0].message!.content;
-
-    console.log('sectiontext:', sectiontext);
-    console.log('=====================');
 
     return sectiontext;
   } catch (error) {
