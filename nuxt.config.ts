@@ -6,7 +6,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   css: [
     '@/assets/css/main.css',
   ],
+
+  compatibilityDate: '2024-08-13',
 });
